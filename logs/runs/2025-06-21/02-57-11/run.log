@@ -8,3 +8,7 @@
 [2025-06-21 02:57:12,321][src.train][INFO] - Instantiating trainer <pytorch_lightning.Trainer>
 [2025-06-21 02:57:12,324][src.train][INFO] - Logging hyperparameters!
 [2025-06-21 02:57:12,334][src.train][INFO] - Starting training!
+[2025-06-21 02:58:28,512][src.train][INFO] - Starting testing!
+[2025-06-21 02:58:28,641][src.train][INFO] - Finalizing!
+[2025-06-21 02:58:28,641][src.train][INFO] - Best checkpoint path:
+checkpoints/epoch=32.ckpt
