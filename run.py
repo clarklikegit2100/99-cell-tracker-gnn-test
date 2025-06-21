@@ -1,6 +1,16 @@
 import dotenv
 import hydra
+import torch_geometric
 from omegaconf import DictConfig
+
+# Somewhere early in your code (e.g. run.py or train.py)
+import torch
+from pytorch_lightning.callbacks import ModelCheckpoint
+from pytorch_lightning.callbacks.early_stopping import EarlyStopping
+#torch.serialization.add_safe_globals([EarlyStopping])
+#from pytorch_lightning.callbacks.early_stopping import EarlyStopping
+#torch.serialization.add_safe_globals([ModelCheckpoint, EarlyStopping])
+torch.serialization.add_safe_globals([torch_geometric.data.data.DataEdgeAttr])
 
 # load environment variables from `.env` file if it exists
 # recursively searches for `.env` in all folders starting from work dir
