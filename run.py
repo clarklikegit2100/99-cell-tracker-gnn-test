@@ -10,7 +10,12 @@ from pytorch_lightning.callbacks.early_stopping import EarlyStopping
 #torch.serialization.add_safe_globals([EarlyStopping])
 #from pytorch_lightning.callbacks.early_stopping import EarlyStopping
 #torch.serialization.add_safe_globals([ModelCheckpoint, EarlyStopping])
-torch.serialization.add_safe_globals([torch_geometric.data.data.DataEdgeAttr])
+
+# only CPU
+#torch.serialization.add_safe_globals([torch_geometric.data.data.DataEdgeAttr])
+
+# GPU
+# remove above torch.serialization.add_safe_globals([torch_geometric.data.data.DataEdgeAttr])
 
 # load environment variables from `.env` file if it exists
 # recursively searches for `.env` in all folders starting from work dir

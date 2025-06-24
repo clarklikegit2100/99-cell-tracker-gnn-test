@@ -1,0 +1,8 @@
+[2025-06-20 17:39:20,861][PML][WARNING] - No module named 'tensorboard'
+[2025-06-20 17:39:20,861][PML][WARNING] - There won't be any logging or model saving.
+[2025-06-20 17:39:20,861][PML][WARNING] - To fix this, pip install record-keeper tensorboard
+[2025-06-20 17:39:20,861][PML][WARNING] - No record_keeper, so no preset hooks are being returned.
+[2025-06-20 17:39:23,710][PML][INFO] - Initializing dataloader
+[2025-06-20 17:39:23,710][PML][INFO] - Initializing dataloader iterator
+[2025-06-20 17:41:27,692][PML][INFO] - Done creating dataloader iterator
+[2025-06-20 17:41:27,693][PML][INFO] - TRAINING EPOCH 1

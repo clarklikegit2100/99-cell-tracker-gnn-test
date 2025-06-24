@@ -1,0 +1,12 @@
+params:
+  input_images: C:\Users\jzhao16\Documents\mydata\gnntest\PhC-C2DH-U373
+  input_masks: C:\Users\jzhao16\Documents\mydata\gnntest\PhC-C2DH-U373
+  input_seg: C:\Users\jzhao16\Documents\mydata\gnntest\PhC-C2DH-U373
+  input_model: C:\Users\jzhao16\Documents\mydata\gnntest\software\parameters\Features_Models\PhC-C2DH-U373\all_params.pth
+  output_csv: C:\Users\jzhao16\Documents\mydata\gnntest\ct_features
+  basic: false
+  sequences:
+  - '01'
+  - '02'
+  seg_dir: _GT/TRA
+_target_: src.datamodules.extract_features.preprocess_seq2graph_2d

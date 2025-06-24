@@ -90,6 +90,12 @@ class ImgDataset(Dataset):
             # read images and masks
             curr_images = [os.path.join(dir_img, fname) for fname in sorted(os.listdir(dir_img)) if type_img in fname]
             curr_masks = [os.path.join(dir_masks, fname) for fname in sorted(os.listdir(dir_masks)) if type_img in fname]
+
+            # modified by jz
+            # normalize path to use forward slashes
+            curr_images = [p.replace("\\", "/") for p in curr_images]
+            curr_masks = [p.replace("\\", "/") for p in curr_masks]
+
             assert len(curr_images) == len(curr_masks)
 
 

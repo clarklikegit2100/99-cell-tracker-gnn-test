@@ -1,0 +1,7 @@
+- params.input_images=${FOLDER_PATH}/${DATA_NAME}
+- params.input_masks=${FOLDER_PATH}/${DATA_NAME}
+- params.input_seg=${FOLDER_PATH}/${DATA_NAME}
+- params.output_csv=${FOLDER_PATH}/basic_features
+- params.sequences=['01','02']
+- params.seg_dir='_GT/TRA'
+- params.basic=True

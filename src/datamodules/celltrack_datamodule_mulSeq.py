@@ -1,5 +1,7 @@
 import numpy as np
 from typing import Optional
+
+import pandas as pd
 from pytorch_lightning import LightningDataModule
 from torch.utils.data import Subset
 
@@ -87,6 +89,12 @@ class CellTrackDataModule(LightningDataModule):
         Do not use it to assign state (self.x = y)."""
         pass
 
+
+
+
+
+
+
     def setup(self, stage: Optional[str] = None):
         """Set variables: self.data_train, self.data_val, self.data_test."""
         dataset = self.data
@@ -105,6 +113,23 @@ class CellTrackDataModule(LightningDataModule):
         print(f"Validation dataset length: {len(self.data_val)}")
         print(f"Test dataset length: {len(self.data_test)}")
         self.data_test = self.data_val
+
+        # Save to CSV
+        def save_to_csv(data, filename):
+            # You may need to adjust this depending on what `data` contains
+            try:
+                if isinstance(data, list) and isinstance(data[0], dict):
+                    df = pd.DataFrame(data)
+                else:
+                    df = pd.DataFrame([d.__dict__ if hasattr(d, '__dict__') else d for d in data])
+                df.to_csv(filename, index=False)
+                print(f"Saved {filename}")
+            except Exception as e:
+                print(f"Failed to save {filename}: {e}")
+
+        save_to_csv(self.data_train, "data_train.csv")
+        save_to_csv(self.data_val, "data_val.csv")
+
 
     def train_dataloader(self):
         return DataLoader(

@@ -1,0 +1,16 @@
+[2025-06-23 17:13:53,067][src.utils.utils][INFO] - Disabling python warnings! <config.disable_warnings=True>
+[2025-06-23 17:13:53,091][src.train][INFO] - Instantiating datamodule <src.datamodules.celltrack_datamodule_mulSeq.CellTrackDataModule>
+[2025-06-23 17:13:53,123][numexpr.utils][INFO] - Note: NumExpr detected 48 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+[2025-06-23 17:13:53,123][numexpr.utils][INFO] - NumExpr defaulting to 8 threads.
+[2025-06-23 17:13:53,387][src.train][INFO] - Instantiating model <src.models.celltrack_plmodel.CellTrackLitModel>
+[2025-06-23 17:13:53,574][src.train][INFO] - Instantiating callback <pytorch_lightning.callbacks.ModelCheckpoint>
+[2025-06-23 17:13:53,575][src.train][INFO] - Instantiating callback <pytorch_lightning.callbacks.EarlyStopping>
+[2025-06-23 17:13:53,575][src.train][INFO] - Instantiating logger <pytorch_lightning.loggers.tensorboard.TensorBoardLogger>
+[2025-06-23 17:13:53,576][src.train][INFO] - Instantiating logger <pytorch_lightning.loggers.csv_logs.CSVLogger>
+[2025-06-23 17:13:53,576][src.train][INFO] - Instantiating trainer <pytorch_lightning.Trainer>
+[2025-06-23 17:13:53,578][src.train][INFO] - Logging hyperparameters!
+[2025-06-23 17:13:54,323][src.train][INFO] - Starting training!
+[2025-06-23 17:17:32,719][src.train][INFO] - Starting testing!
+[2025-06-23 17:17:33,629][src.train][INFO] - Finalizing!
+[2025-06-23 17:17:33,629][src.train][INFO] - Best checkpoint path:
+/home/clark/code/99-cell-tracker-gnn-test/logs/runs/2025-06-23/17-13-53/checkpoints/epoch=52.ckpt
