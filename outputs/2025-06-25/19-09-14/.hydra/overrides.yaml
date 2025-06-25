@@ -1,0 +1,4 @@
+- dataset.kwargs.data_dir_img=C:\Users\jzhao16\Documents\mydata\gnntest/Fluo-C2DL-Huh7
+- dataset.kwargs.data_dir_mask=C:\Users\jzhao16\Documents\mydata\gnntest/Fluo-C2DL-Huh7
+- dataset.kwargs.dir_csv=C:\Users\jzhao16\Documents\mydata\gnntest/basic_features/Fluo-C2DL-Huh7
+- dataset.kwargs.subdir_mask='GT/TRA'
