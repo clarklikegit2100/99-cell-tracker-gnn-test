@@ -1,0 +1,8 @@
+- params.input_images=C:/Users/jzhao16/Documents/mydata/gnntest/Fluo-C2DL-Huh7
+- params.input_masks=C:/Users/jzhao16/Documents/mydata/gnntest/Fluo-C2DL-Huh7
+- params.input_seg=C:/Users/jzhao16/Documents/mydata/gnntest/Fluo-C2DL-Huh7
+- params.output_csv=C:/Users/jzhao16/Documents/mydata/gnntest/ct_features/
+- params.sequences=['01','02']
+- params.seg_dir='_GT/TRA'
+- params.basic=False
+- params.input_model=C:/Users/jzhao16/Documents/mydata/gnntest\software/parameters/Features_Models\Fluo-C2DL-Huh7\all_params.pth
