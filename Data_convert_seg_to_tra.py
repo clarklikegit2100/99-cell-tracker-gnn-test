@@ -54,8 +54,80 @@ def convert_seg_to_track(seg_dir, track_txt, output_dir):
         print(f"[✓] Saved {out_path}")
 
 # === Modify these paths as needed ===
-seg_dir = "CTC/train/00_GT/SEG"
-track_txt = "CTC/train/00_GT/TRA/man_track.txt"
-output_dir = "CTC/train/00_GT/TRA"
 
-convert_seg_to_track(seg_dir, track_txt, output_dir)
+from pathlib import Path
+
+def process_train_set(base_dir):
+    base_dir = Path(base_dir)
+    for i in range(90):  # 0 to 64 inclusive
+        batch_name = f"{i:02d}_GT"
+        seg_dir = base_dir / batch_name / "SEG"
+        tra_dir = base_dir / batch_name / "TRA"
+        track_txt = tra_dir / "man_track.txt"
+
+        if seg_dir.exists() and track_txt.exists():
+            print(f"[→] Processing batch {i:02d}")
+            convert_seg_to_track(seg_dir, track_txt, tra_dir)
+        else:
+            print(f"[!] Skipping {batch_name} (missing SEG or man_track.txt)")
+
+# Run it
+process_train_set("CTC/train")
+
+
+
+def process_train_set(base_dir):
+    base_dir = Path(base_dir)
+    for i in range(90):  # 0 to 64 inclusive
+        batch_name = f"{i:02d}_GT"
+        seg_dir = base_dir / batch_name / "SEG"
+        tra_dir = base_dir / batch_name / "TRA"
+        track_txt = tra_dir / "man_track.txt"
+
+        if seg_dir.exists() and track_txt.exists():
+            print(f"[→] Processing batch {i:02d}")
+            convert_seg_to_track(seg_dir, track_txt, tra_dir)
+        else:
+            print(f"[!] Skipping {batch_name} (missing SEG or man_track.txt)")
+
+# Run it
+
+def process_val_set(base_dir):
+    base_dir = Path(base_dir)
+    for i in range(26):  # 0 to 64 inclusive
+        batch_name = f"{i:02d}_GT"
+        seg_dir = base_dir / batch_name / "SEG"
+        tra_dir = base_dir / batch_name / "TRA"
+        track_txt = tra_dir / "man_track.txt"
+
+        if seg_dir.exists() and track_txt.exists():
+            print(f"[→] Processing batch {i:02d}")
+            convert_seg_to_track(seg_dir, track_txt, tra_dir)
+        else:
+            print(f"[!] Skipping {batch_name} (missing SEG or man_track.txt)")
+
+# Run it
+
+
+
+def process_test_set(base_dir):
+    base_dir = Path(base_dir)
+    for i in range(11):  # 0 to 64 inclusive
+        batch_name = f"{i:02d}_GT"
+        seg_dir = base_dir / batch_name / "SEG"
+        tra_dir = base_dir / batch_name / "TRA"
+        track_txt = tra_dir / "man_track.txt"
+
+        if seg_dir.exists() and track_txt.exists():
+            print(f"[→] Processing batch {i:02d}")
+            convert_seg_to_track(seg_dir, track_txt, tra_dir)
+        else:
+            print(f"[!] Skipping {batch_name} (missing SEG or man_track.txt)")
+
+# Run it
+process_train_set("CTC/train")
+process_train_set("CTC/val")
+process_train_set("CTC/test")
+
+
+
