@@ -66,7 +66,7 @@ def build_gt_dict(gt_dir, seg_dir, num_frames=100):
 
     print(f"所有帧处理完成，共匹配 {total_matches} 对映射。")
     return gt_dict
-
+'''
 def main():
     # 设置命令行参数解析
     parser = argparse.ArgumentParser(
@@ -102,6 +102,44 @@ def main():
         print(f"GT字典已保存至 {output_path}")
     except Exception as e:
         print(f"保存JSON文件失败: {e}")
+'''
+import os
+import json
+# import argparse  # No longer needed if not using CLI
+# from your_module import build_gt_dict  # Make sure this function is defined/imported
+
+def main():
+    # ===== 手动设置参数 =====
+
+
+    num_frames = 149             # 设置处理帧数
+    #dataset_name= "PhC-C2DH-U373"  # 数据集名称
+    dataset_name = 'Fluo-N2DH-SIM+'
+    seq_num = '02'  # 序列编号
+    path_basic = f'data/{dataset_name}'
+
+    gt_dir = f"{path_basic}/{seq_num}_GT/TRA"  # 替换为你的GT文件夹路径
+    #seg_dir = f"{path_basic}/{seq_num}_Msk_CSTQ"  # 替换为你的SEG文件夹路径
+    seg_dir = f"{path_basic}/{seq_num}_GT/SEG"  # 替换为你的SEG文件夹路径
+    output_path = f"{dataset_name}-{seq_num}-gt_dict.json" # 设置输出文件路径
+
+    # ===== 路径合法性检查 =====
+    if not os.path.isdir(gt_dir):
+        raise FileNotFoundError(f"提供的GT路径不存在或不是文件夹: {gt_dir}")
+    if not os.path.isdir(seg_dir):
+        raise FileNotFoundError(f"提供的SEG路径不存在或不是文件夹: {seg_dir}")
+
+    # ===== 构建GT字典并保存 =====
+    gt_dict = build_gt_dict(gt_dir, seg_dir, num_frames)
+
+    try:
+        dict_to_save = {f"{frame},{cell}": track for (frame, cell), track in gt_dict.items()}
+        with open(output_path, "w", encoding="utf-8") as f:
+            json.dump(dict_to_save, f, ensure_ascii=False, indent=4)
+        print(f"GT字典已保存至 {output_path}")
+    except Exception as e:
+        print(f"保存JSON文件失败: {e}")
 
 if __name__ == "__main__":
     main()
+

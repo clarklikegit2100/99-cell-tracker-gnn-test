@@ -44,6 +44,7 @@ def build_edge_labels(gt_dict, output_csv_path, frame_diff=1):
         writer.writerows(edge_labels)
     print(f"边标签已保存至 {output_csv_path}")
 
+'''
 def main():
     parser = argparse.ArgumentParser(description="使用 GT 字典构建图神经网络边标签")
     parser.add_argument("--gt_json", required=True, help="路径：gt_dict.json")
@@ -53,6 +54,26 @@ def main():
 
     gt_dict = load_gt_dict(args.gt_json)
     build_edge_labels(gt_dict, args.output, frame_diff=args.frame_diff)
+'''
+import json
+# import argparse  # 不再需要
+# from your_module import load_gt_dict, build_edge_labels  # 确保你有这两个函数
+
+def main():
+    # ===== 手动设置参数 =====
+    #dataset_name= "PhC-C2DH-U373"  # dataset name
+    dataset_name = 'Fluo-N2DH-SIM+'
+    seq_num = '02'  #
+
+    gt_json_path = f"{dataset_name}-{seq_num}-gt_dict.json"            # todo update to  GT dict JSON path
+
+    output_path = f"{dataset_name}-{seq_num}-edge_labels.csv"          # 替换为输出CSV路径
+    frame_diff = 1                           # between frames, default is 1 (i.e., f and f+1)
+
+    # ===== 执行主逻辑 =====
+    gt_dict = load_gt_dict(gt_json_path)
+    build_edge_labels(gt_dict, output_path, frame_diff=frame_diff)
 
 if __name__ == "__main__":
     main()
+
