@@ -54,8 +54,8 @@ def convert_seg_to_track(seg_dir, track_txt, output_dir):
         print(f"[✓] Saved {out_path}")
 
 # === Modify these paths as needed ===
-seg_dir = "CTC_DynamicNuclear/train/00_GT/SEG"
-track_txt = "CTC_DynamicNuclear/train/00_GT/TRA/man_track.txt"
-output_dir = "CTC_DynamicNuclear/train/00_GT/TRA"
+seg_dir = "CTC/train/00_GT/SEG"
+track_txt = "CTC/train/00_GT/TRA/man_track.txt"
+output_dir = "CTC/train/00_GT/TRA"
 
 convert_seg_to_track(seg_dir, track_txt, output_dir)
