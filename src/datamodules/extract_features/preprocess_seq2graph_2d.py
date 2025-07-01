@@ -206,9 +206,11 @@ class TestDataset(Dataset):
         print(f"files were saved to : {full_dir}")
 
     def preprocess_features_metric_learning(self, path_to_write, dict_path):
-        dict_params = torch.load(dict_path)
-        # modified by jz 2025-06-21
-        # dict_params = torch.load(dict_path,weights_only=False)
+        # modified by jz 2025-06-21 for ubuntu22.04
+        #dict_params = torch.load(dict_path)
+
+        # modified by jz 2025-06-21 for win11
+        dict_params = torch.load(dict_path,weights_only=False)
 
         self.min_cell = dict_params['min_cell'][int(self.sec_path) - 1]
         self.max_cell = dict_params['max_cell'][int(self.sec_path) - 1]
