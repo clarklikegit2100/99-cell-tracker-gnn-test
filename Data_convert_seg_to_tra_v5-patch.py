@@ -61,7 +61,7 @@ from pathlib import Path
 
 def process_train_set(base_dir):
     base_dir = Path(base_dir)
-    for i in range(91):  #
+    for i in range(90,91):  #
         batch_name = f"{i:02d}_GT"
         seg_dir = base_dir / batch_name / "SEG"
         tra_dir = base_dir / batch_name / "TRA"
@@ -77,7 +77,7 @@ def process_train_set(base_dir):
 
 def process_val_set(base_dir):
     base_dir = Path(base_dir)
-    for i in range(27):  # 0 to 64 inclusive
+    for i in range(26,27):  # 0 to 64 inclusive
         batch_name = f"{i:02d}_GT"
         seg_dir = base_dir / batch_name / "SEG"
         tra_dir = base_dir / batch_name / "TRA"
@@ -95,7 +95,7 @@ def process_val_set(base_dir):
 
 def process_test_set(base_dir):
     base_dir = Path(base_dir)
-    for i in range(12):  # 0 to 64 inclusive
+    for i in range(11,12):
         batch_name = f"{i:02d}_GT"
         seg_dir = base_dir / batch_name / "SEG"
         tra_dir = base_dir / batch_name / "TRA"
