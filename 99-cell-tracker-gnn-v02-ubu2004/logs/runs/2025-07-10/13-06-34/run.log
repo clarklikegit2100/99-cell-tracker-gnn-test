@@ -1,0 +1,14 @@
+[2025-07-10 13:06:35,987][src.utils.utils][INFO] - Disabling python warnings! <config.disable_warnings=True>
+[2025-07-10 13:06:36,015][src.train][INFO] - Instantiating datamodule <src.datamodules.celltrack_datamodule_mulSeq.CellTrackDataModule>
+[2025-07-10 13:06:36,477][numexpr.utils][INFO] - Note: NumExpr detected 48 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+[2025-07-10 13:06:36,477][numexpr.utils][INFO] - NumExpr defaulting to 8 threads.
+[2025-07-10 13:06:45,274][src.train][INFO] - Instantiating model <src.models.celltrack_plmodel.CellTrackLitModel>
+[2025-07-10 13:06:45,541][src.train][INFO] - Instantiating callback <pytorch_lightning.callbacks.ModelCheckpoint>
+[2025-07-10 13:06:45,545][src.train][INFO] - Instantiating callback <pytorch_lightning.callbacks.EarlyStopping>
+[2025-07-10 13:06:45,545][src.train][INFO] - Instantiating logger <pytorch_lightning.loggers.tensorboard.TensorBoardLogger>
+[2025-07-10 13:06:45,546][src.train][INFO] - Instantiating logger <pytorch_lightning.loggers.csv_logs.CSVLogger>
+[2025-07-10 13:06:45,546][src.train][INFO] - Instantiating trainer <pytorch_lightning.Trainer>
+[2025-07-10 13:06:45,549][pytorch_lightning.utilities.distributed][INFO] - GPU available: True, used: True
+[2025-07-10 13:06:45,549][pytorch_lightning.utilities.distributed][INFO] - TPU available: False, using: 0 TPU cores
+[2025-07-10 13:06:45,549][pytorch_lightning.utilities.distributed][INFO] - IPU available: False, using: 0 IPUs
+[2025-07-10 13:06:45,549][src.train][INFO] - Logging hyperparameters!

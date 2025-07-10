@@ -1,0 +1,12 @@
+params:
+  input_images: /home/tony/data/gnntest/CTC/Fluo-C2DL-Huh7
+  input_masks: /home/tony/data/gnntest/CTC/Fluo-C2DL-Huh7
+  input_seg: /home/tony/data/gnntest/CTC/Fluo-C2DL-Huh7
+  input_model: /home/tony/data/gnntest/software/parameters/Features_Models/Fluo-C2DL-Huh7/all_params.pth
+  output_csv: /home/tony/data/gnntest/CTC/ct_features/
+  basic: false
+  sequences:
+  - '01'
+  - '02'
+  seg_dir: _GT/TRA
+_target_: src.datamodules.extract_features.preprocess_seq2graph_2d

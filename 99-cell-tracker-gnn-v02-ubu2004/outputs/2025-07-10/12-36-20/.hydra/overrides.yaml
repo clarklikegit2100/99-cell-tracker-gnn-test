@@ -1,0 +1,8 @@
+- params.input_images=/home/tony/data/gnntest/CTC/PhC-C2DH-U373
+- params.input_masks=/home/tony/data/gnntest/CTC/PhC-C2DH-U373
+- params.input_seg=/home/tony/data/gnntest/CTC/PhC-C2DH-U373
+- params.output_csv=/home/tony/data/gnntest/CTC/ct_features/
+- params.sequences=[01,02]
+- params.seg_dir=_GT/TRA
+- params.basic=False
+- params.input_model=/home/tony/data/gnntest/CTC/software/parameters/Features_Models/PhC-C2DH-U373/all_params.pth

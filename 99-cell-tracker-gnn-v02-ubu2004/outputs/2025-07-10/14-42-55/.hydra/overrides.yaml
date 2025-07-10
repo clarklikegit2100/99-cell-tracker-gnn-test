@@ -1,0 +1,8 @@
+- params.input_images=/home/tony/data/gnntest/CTC/Fluo-N2DH-SIM+
+- params.input_masks=/home/tony/data/gnntest/CTC/Fluo-N2DH-SIM+
+- params.input_seg=/home/tony/data/gnntest/CTC/Fluo-N2DH-SIM+
+- params.output_csv=/home/tony/data/gnntest/CTC/ct_features/
+- params.sequences=[01,02]
+- params.seg_dir=_GT/TRA
+- params.basic=False
+- params.input_model=/home/tony/data/gnntest/software/parameters/Features_Models/Fluo-N2DH-SIM+/all_params.pth

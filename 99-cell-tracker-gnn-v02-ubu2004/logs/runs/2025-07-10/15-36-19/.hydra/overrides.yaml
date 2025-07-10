@@ -1,0 +1,3 @@
+- datamodule.dataset_params.main_path=/home/tony/data/gnntest/CTC/ct_features/Fluo-C2DL-Huh7
+- datamodule.dataset_params.exp_name=2D_SIM
+- datamodule.dataset_params.drop_feat=[]

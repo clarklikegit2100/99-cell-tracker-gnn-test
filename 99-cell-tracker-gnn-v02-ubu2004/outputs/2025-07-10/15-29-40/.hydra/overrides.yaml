@@ -1,0 +1,7 @@
+- params.input_images=/home/tony/data/gnntest/CTC/Fluo-C2DL-Huh7
+- params.input_masks=/home/tony/data/gnntest/CTC/Fluo-C2DL-Huh7
+- params.input_seg=/home/tony/data/gnntest/CTC/Fluo-C2DL-Huh7
+- params.output_csv=/home/tony/data/gnntest/CTC/basic_features
+- params.sequences=[01,02]
+- params.seg_dir=_GT/TRA
+- params.basic=True
