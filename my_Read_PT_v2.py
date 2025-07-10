@@ -5,7 +5,7 @@ from imageio import save
 from torch_geometric.utils import to_networkx
 
 # === Step 1: Load PyG graph data ===
-pt_file=r"pt-read\pytorch_geometric_data.pt"
+pt_file=r"pt-read\01_RES_inference\pytorch_geometric_data.pt"
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
 data = torch.load(pt_file, map_location=device, weights_only=False)
 print("Graph loaded.")
@@ -13,7 +13,7 @@ print(f"Node feature shape: {data.x.shape}")
 print(f"Edge index shape: {data.edge_index.shape}")
 
 # === Step 2: Load edge weights ===
-pt_weights_file = r'pt-read\raw_output.pt'
+pt_weights_file = r'pt-read\01_RES_inference\raw_output.pt'
 edge_weights = torch.load(pt_weights_file, map_location='cpu').detach().cpu().numpy()
 print("Edge weights loaded.")
 print(f"Edge weights shape: {edge_weights.shape}")
@@ -22,7 +22,7 @@ print(f"Edge weights shape: {edge_weights.shape}")
 edges = [(int(s), int(t)) for s, t in data.edge_index.t().tolist()]
 
 # Save to text file
-output_file = r'pt-read\edges.txt'
+output_file = r'pt-read\01_RES_inference\edges.txt'
 with open(output_file, 'w') as f:
     for src, tgt in edges:
         f.write(f"{src} {tgt}\n")

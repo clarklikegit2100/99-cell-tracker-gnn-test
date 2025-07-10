@@ -251,7 +251,9 @@ class TestDataset(Dataset):
         else:
             print("We don't assign new region of interest - use the old one")
 
-        self.pad_value = dict_params['pad_value']
+        # self.pad_value = dict_params['pad_value']
+        self.pad_value = dict_params.get('pad_value', 0)  # or -1 or np.nan based on your training
+
         # models params
         model_name = dict_params['model_name']
         mlp_dims = dict_params['mlp_dims']
