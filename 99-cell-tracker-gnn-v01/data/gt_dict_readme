@@ -1,0 +1,2 @@
+ gt_dict columns as follows:
+ {(frame, cell_id): track_id, ...}

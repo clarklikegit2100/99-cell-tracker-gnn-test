@@ -1,2 +1,0 @@
-[2025-06-21 02:09:59,906][src.utils.utils][INFO] - Disabling python warnings! <config.disable_warnings=True>
-[2025-06-21 02:09:59,934][src.train][INFO] - Instantiating datamodule <src.datamodules.celltrack_datamodule_mulSeq.CellTrackDataModule>

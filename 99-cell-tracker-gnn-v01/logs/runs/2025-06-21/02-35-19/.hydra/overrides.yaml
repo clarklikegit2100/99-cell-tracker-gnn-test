@@ -1,0 +1,4 @@
+- datamodule.dataset_params.main_path=/Users/my505/Documents/Data/gnntest/ct_features/PhC-C2DH-U373
+- datamodule.dataset_params.exp_name=2D_SIM
+- datamodule.dataset_params.drop_feat=[]
+- trainer.gpus=0
