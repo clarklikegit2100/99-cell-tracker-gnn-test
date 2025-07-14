@@ -24,6 +24,7 @@ def build_edge_labels(gt_dict, output_csv_path, frame_diff=1):
 
     # 提取所有帧号
     frames = sorted(set(f for f, _ in gt_dict.keys()))
+    print(f"正在构建边标签，跨帧间隔为 {frame_diff}，共 {len(frames)} 帧...")
     for f in frames:
         source_nodes = [(f, cid) for (f0, cid) in gt_dict if f0 == f]
         target_nodes = [(f + frame_diff, cid) for (f0, cid) in gt_dict if f0 == f + frame_diff]
@@ -62,7 +63,8 @@ import json
 def main():
     # ===== 手动设置参数 =====
     #dataset_name= "PhC-C2DH-U373"  # dataset name
-    dataset_name = 'Fluo-N2DH-SIM+'
+    #dataset_name = 'Fluo-N2DH-SIM+'
+    dataset_name = 'Fluo-C2DL-Huh7'
     seq_num = '02'  #
 
     gt_json_path = f"{dataset_name}-{seq_num}-gt_dict.json"            # todo update to  GT dict JSON path

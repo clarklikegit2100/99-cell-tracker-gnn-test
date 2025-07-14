@@ -8,7 +8,7 @@ import json
 import numpy as np
 import tifffile
 
-def build_gt_dict(gt_dir, seg_dir, num_frames=100):
+def build_gt_dict(gt_dir, seg_dir, num_frames):
     """
     从GT和SEG文件夹生成(frame, cell_id)到track_id的映射字典。
     gt_dir: GT图像文件夹路径，应包含命名为 man_trackXXX.tif 的帧图像。
@@ -20,7 +20,7 @@ def build_gt_dict(gt_dir, seg_dir, num_frames=100):
     total_matches = 0  # 计数总匹配对数
 
     # 遍历每一帧
-    for frame in range(1, num_frames+1):
+    for frame in range(0, num_frames):
         # 构建当前帧的文件名，按照三位数字格式
         gt_filename = os.path.join(gt_dir, f"man_track{frame:03d}.tif")
         seg_filename = os.path.join(seg_dir, f"man_seg{frame:03d}.tif")
@@ -66,43 +66,7 @@ def build_gt_dict(gt_dir, seg_dir, num_frames=100):
 
     print(f"所有帧处理完成，共匹配 {total_matches} 对映射。")
     return gt_dict
-'''
-def main():
-    # 设置命令行参数解析
-    parser = argparse.ArgumentParser(
-        description="从GT和SEG文件夹生成细胞追踪标签映射字典，并保存为JSON")
-    parser.add_argument("--gt_path", required=True, help="GT文件夹路径，包含man_trackXXX.tif文件")
-    parser.add_argument("--seg_path", required=True, help="SEG文件夹路径，包含man_segXXX.tif文件")
-    parser.add_argument("--num_frames", type=int, default=100,
-                        help="处理的帧数（默认100）")
-    parser.add_argument("--output", default="gt_dict.json",
-                        help="输出JSON文件路径（默认gt_dict.json）")
-    args = parser.parse_args()
 
-    gt_dir = args.gt_path
-    seg_dir = args.seg_path
-    num_frames = args.num_frames
-    output_path = args.output
-
-    # 路径合法性检查
-    if not os.path.isdir(gt_dir):
-        raise FileNotFoundError(f"提供的GT路径不存在或不是文件夹: {gt_dir}")
-    if not os.path.isdir(seg_dir):
-        raise FileNotFoundError(f"提供的SEG路径不存在或不是文件夹: {seg_dir}")
-
-    # 构建GT_dict映射
-    gt_dict = build_gt_dict(gt_dir, seg_dir, num_frames)
-
-    # 保存为JSON文件
-    try:
-        # 将元组键转换为字符串键以便序列化
-        dict_to_save = {f"{frame},{cell}": track for (frame, cell), track in gt_dict.items()}
-        with open(output_path, "w", encoding="utf-8") as f:
-            json.dump(dict_to_save, f, ensure_ascii=False, indent=4)
-        print(f"GT字典已保存至 {output_path}")
-    except Exception as e:
-        print(f"保存JSON文件失败: {e}")
-'''
 import os
 import json
 # import argparse  # No longer needed if not using CLI
@@ -111,10 +75,9 @@ import json
 def main():
     # ===== 手动设置参数 =====
 
-
-    num_frames = 149             # 设置处理帧数
     #dataset_name= "PhC-C2DH-U373"  # 数据集名称
-    dataset_name = 'Fluo-N2DH-SIM+'
+    #dataset_name = 'Fluo-N2DH-SIM+'
+    dataset_name = 'Fluo-C2DL-Huh7'
     seq_num = '02'  # 序列编号
     path_basic = f'data/{dataset_name}'
 
@@ -128,6 +91,15 @@ def main():
         raise FileNotFoundError(f"提供的GT路径不存在或不是文件夹: {gt_dir}")
     if not os.path.isdir(seg_dir):
         raise FileNotFoundError(f"提供的SEG路径不存在或不是文件夹: {seg_dir}")
+
+    all_gt_frames = sorted([
+        int(f.split("man_track")[1].split(".")[0])
+        for f in os.listdir(gt_dir)
+        if f.startswith("man_track") and f.endswith(".tif")
+    ])
+
+    num_frames= len(all_gt_frames)
+
 
     # ===== 构建GT字典并保存 =====
     gt_dict = build_gt_dict(gt_dir, seg_dir, num_frames)
