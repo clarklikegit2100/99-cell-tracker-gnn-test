@@ -7,6 +7,6 @@ data/Fluo-N2DH-SIM+/Plots_Results_Fluo-N2DH-SIM+02.fig
 data/Fluo-N2DH-SIM+/cell_lineage_tree_Fluo-N2DH-SIM+02.fig
 data/Fluo-N2DH-SIM+/ST-feature-computation-plot-Fluo-N2DH-SIM+01.fig
 
-*.pth
-*.pt
-*.zip
+99-cell-tracker-gnn-v02-ubu2004/data/gnntest/CTC/Fluo-N2DL-HeLa.zip
+99-cell-tracker-gnn-v02-ubu2004/data/gnntest/CTC/ct_features/Fluo-N2DH-SIM+/01/processed/2D_SIM/MinMax_normalizedData_DirectedGraph_30Frames.pt
+99-cell-tracker-gnn-v02-ubu2004/data/gnntest/CTC/ct_features/Fluo-N2DL-HeLa/01/processed/2D_SIM/MinMax_normalizedData_DirectedGraph_10Frames.pt
