@@ -1,0 +1,14 @@
+Hello Professor,
+
+Please find the draft of the email to be sent to Dr. Das with respect to the Nature Scientific Reports's journal
+
+I am writing regarding our journal article titled “Scale selection and machine learning-based cell segmentation and tracking in time-lapse microscopy”, published in Nature Scientific Reports in April 2025.
+Figures 7 and 8 in the paper present segmentation and tracking results (including ground truth) produced by the MIVIC Lab’s method on external datasets specifically SingleCellbot and 4.8umrobotX10_1 (as requested by the journal reviewers).
+In light of the use of these datasets, we would like to propose an update to the author list to include contributors responsible for the generation of the microbot data. We believe this addition appropriately reflects their contribution to the published work.
+Following the discussion with the deputy editor of Scientific Reports, if this proposal is accepted as a resolution, a formal correction will be issued, including an updated author list and revised author contributions.
+
+We would appreciate your thoughts and suggestions regarding this proposal.
+
+Thank you for your time and consideration. We look forward to your response.
+Best Regards,
+Nagasoujanya Annasamudram
