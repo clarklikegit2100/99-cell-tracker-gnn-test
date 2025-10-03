@@ -28,3 +28,8 @@ cmd = [
 
 print("[Step 1 : Run Extract Features]", " ".join(shlex.quote(x) for x in cmd))
 subprocess.run(cmd, check=True, text=True)
+
+
+
+
+#python run_train_metric_learning.py dataset.kwargs.data_dir_img="${FOLDER_PATH}/${DATA_NAME}" dataset.kwargs.data_dir_mask="${FOLDER_PATH}/${DATA_NAME}" dataset.kwargs.dir_csv="${FOLDER_PATH}/basic_features/${DATA_NAME}" dataset.kwargs.subdir_mask='GT/TRA'
