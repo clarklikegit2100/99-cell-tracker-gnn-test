@@ -1,0 +1,7 @@
+- params.input_images=C:\Users\jzhao16\Documents\GitHub\99-cell-tracker-gnn-test\99-cell-tracker-gnn-v02-ubu2004\data\gnntest\CTC\PhC-C2DH-U373
+- params.input_masks=C:\Users\jzhao16\Documents\GitHub\99-cell-tracker-gnn-test\99-cell-tracker-gnn-v02-ubu2004\data\gnntest\CTC\PhC-C2DH-U373
+- params.input_seg=C:\Users\jzhao16\Documents\GitHub\99-cell-tracker-gnn-test\99-cell-tracker-gnn-v02-ubu2004\data\gnntest\CTC\PhC-C2DH-U373
+- params.output_csv=C:\Users\jzhao16\Documents\GitHub\99-cell-tracker-gnn-test\99-cell-tracker-gnn-v02-ubu2004\data\gnntest\CTC\basic_features
+- params.sequences=['01','02']
+- params.seg_dir=_GT/TRA
+- params.basic=true

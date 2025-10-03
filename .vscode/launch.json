@@ -8,7 +8,9 @@
             "name": "Python Debugger: Current File with Arguments",
             "type": "debugpy",
             "request": "launch",
-            "program": "${file}",
+            //"program": "${file}",
+            "program": "${workspaceFolder}/99-cell-tracker-gnn-v02-ubu2004/run_feat_extract.py",
+            "cwd": "${workspaceFolder}/99-cell-tracker-gnn-v02-ubu2004",
             "console": "integratedTerminal",
             "args": "${command:pickArgs}"
         }

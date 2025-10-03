@@ -1,0 +1,210 @@
+[2025-10-03 13:38:27,517][PIL.TiffImagePlugin][DEBUG] - *** TiffImageFile._open ***
+[2025-10-03 13:38:27,517][PIL.TiffImagePlugin][DEBUG] - - __first: 181614
+[2025-10-03 13:38:27,517][PIL.TiffImagePlugin][DEBUG] - - ifh: b'II*\x00n\xc5\x02\x00'
+[2025-10-03 13:38:27,517][PIL.TiffImagePlugin][DEBUG] - Seeking to frame 0, on frame -1, __next 181614, location: 8
+[2025-10-03 13:38:27,517][PIL.TiffImagePlugin][DEBUG] - Loading tags, location: 181614
+[2025-10-03 13:38:27,518][PIL.TiffImagePlugin][DEBUG] - tag: NewSubfileType (254) - type: long (4) - value: b'\x00\x00\x00\x00'
+[2025-10-03 13:38:27,518][PIL.TiffImagePlugin][DEBUG] - tag: ImageWidth (256) - type: short (3) - value: b'\xb8\x02'
+[2025-10-03 13:38:27,518][PIL.TiffImagePlugin][DEBUG] - tag: ImageLength (257) - type: short (3) - value: b'\x08\x02'
+[2025-10-03 13:38:27,518][PIL.TiffImagePlugin][DEBUG] - tag: BitsPerSample (258) - type: short (3) - value: b'\x08\x00'
+[2025-10-03 13:38:27,518][PIL.TiffImagePlugin][DEBUG] - tag: Compression (259) - type: short (3) - value: b'\x05\x00'
+[2025-10-03 13:38:27,518][PIL.TiffImagePlugin][DEBUG] - tag: PhotometricInterpretation (262) - type: short (3) - value: b'\x01\x00'
+[2025-10-03 13:38:27,518][PIL.TiffImagePlugin][DEBUG] - tag: FillOrder (266) - type: short (3) - value: b'\x01\x00'
+[2025-10-03 13:38:27,518][PIL.TiffImagePlugin][DEBUG] - tag: StripOffsets (273) - type: long (4) Tag Location: 181712 - Data Location: 182084 - value: <table: 192 bytes>
+[2025-10-03 13:38:27,518][PIL.TiffImagePlugin][DEBUG] - tag: Orientation (274) - type: short (3) - value: b'\x01\x00'
+[2025-10-03 13:38:27,518][PIL.TiffImagePlugin][DEBUG] - tag: SamplesPerPixel (277) - type: short (3) - value: b'\x01\x00'
+[2025-10-03 13:38:27,518][PIL.TiffImagePlugin][DEBUG] - tag: RowsPerStrip (278) - type: short (3) - value: b'\x0b\x00'
+[2025-10-03 13:38:27,518][PIL.TiffImagePlugin][DEBUG] - tag: StripByteCounts (279) - type: long (4) Tag Location: 181760 - Data Location: 181892 - value: <table: 192 bytes>
+[2025-10-03 13:38:27,518][PIL.TiffImagePlugin][DEBUG] - tag: XResolution (282) - type: rational (5) Tag Location: 181772 - Data Location: 181860 - value: b'\xff\xff\xff\xff\x85B\x04\x00'
+[2025-10-03 13:38:27,518][PIL.TiffImagePlugin][DEBUG] - tag: YResolution (283) - type: rational (5) Tag Location: 181784 - Data Location: 181868 - value: b'\xff\xff\xff\xff\x85B\x04\x00'
+[2025-10-03 13:38:27,519][PIL.TiffImagePlugin][DEBUG] - tag: PlanarConfiguration (284) - type: short (3) - value: b'\x01\x00'
+[2025-10-03 13:38:27,519][PIL.TiffImagePlugin][DEBUG] - tag: XPosition (286) - type: rational (5) Tag Location: 181808 - Data Location: 181876 - value: b'\x00\x00\x00\x00\x01\x00\x00\x00'
+[2025-10-03 13:38:27,519][PIL.TiffImagePlugin][DEBUG] - tag: YPosition (287) - type: rational (5) Tag Location: 181820 - Data Location: 181884 - value: b'\x00\x00\x00\x00\x01\x00\x00\x00'
+[2025-10-03 13:38:27,519][PIL.TiffImagePlugin][DEBUG] - tag: ResolutionUnit (296) - type: short (3) - value: b'\x03\x00'
+[2025-10-03 13:38:27,519][PIL.TiffImagePlugin][DEBUG] - tag: PageNumber (297) - type: short (3) - value: b'\x00\x00\x01\x00'
+[2025-10-03 13:38:27,519][PIL.TiffImagePlugin][DEBUG] - tag: SampleFormat (339) - type: short (3) - value: b'\x01\x00'
+[2025-10-03 13:38:27,519][PIL.TiffImagePlugin][DEBUG] - tag: NewSubfileType (254) - type: long (4) - value: b'\x00\x00\x00\x00'
+[2025-10-03 13:38:27,519][PIL.TiffImagePlugin][DEBUG] - tag: ImageWidth (256) - type: short (3) - value: b'\xb8\x02'
+[2025-10-03 13:38:27,519][PIL.TiffImagePlugin][DEBUG] - tag: ImageLength (257) - type: short (3) - value: b'\x08\x02'
+[2025-10-03 13:38:27,519][PIL.TiffImagePlugin][DEBUG] - tag: BitsPerSample (258) - type: short (3) - value: b'\x08\x00'
+[2025-10-03 13:38:27,519][PIL.TiffImagePlugin][DEBUG] - tag: Compression (259) - type: short (3) - value: b'\x05\x00'
+[2025-10-03 13:38:27,519][PIL.TiffImagePlugin][DEBUG] - tag: PhotometricInterpretation (262) - type: short (3) - value: b'\x01\x00'
+[2025-10-03 13:38:27,519][PIL.TiffImagePlugin][DEBUG] - tag: FillOrder (266) - type: short (3) - value: b'\x01\x00'
+[2025-10-03 13:38:27,519][PIL.TiffImagePlugin][DEBUG] - tag: StripOffsets (273) - type: long (4) Tag Location: 181712 - Data Location: 182084 - value: <table: 192 bytes>
+[2025-10-03 13:38:27,519][PIL.TiffImagePlugin][DEBUG] - tag: Orientation (274) - type: short (3) - value: b'\x01\x00'
+[2025-10-03 13:38:27,519][PIL.TiffImagePlugin][DEBUG] - tag: SamplesPerPixel (277) - type: short (3) - value: b'\x01\x00'
+[2025-10-03 13:38:27,520][PIL.TiffImagePlugin][DEBUG] - tag: RowsPerStrip (278) - type: short (3) - value: b'\x0b\x00'
+[2025-10-03 13:38:27,520][PIL.TiffImagePlugin][DEBUG] - tag: StripByteCounts (279) - type: long (4) Tag Location: 181760 - Data Location: 181892 - value: <table: 192 bytes>
+[2025-10-03 13:38:27,520][PIL.TiffImagePlugin][DEBUG] - tag: XResolution (282) - type: rational (5) Tag Location: 181772 - Data Location: 181860 - value: b'\xff\xff\xff\xff\x85B\x04\x00'
+[2025-10-03 13:38:27,520][PIL.TiffImagePlugin][DEBUG] - tag: YResolution (283) - type: rational (5) Tag Location: 181784 - Data Location: 181868 - value: b'\xff\xff\xff\xff\x85B\x04\x00'
+[2025-10-03 13:38:27,520][PIL.TiffImagePlugin][DEBUG] - tag: PlanarConfiguration (284) - type: short (3) - value: b'\x01\x00'
+[2025-10-03 13:38:27,520][PIL.TiffImagePlugin][DEBUG] - tag: XPosition (286) - type: rational (5) Tag Location: 181808 - Data Location: 181876 - value: b'\x00\x00\x00\x00\x01\x00\x00\x00'
+[2025-10-03 13:38:27,520][PIL.TiffImagePlugin][DEBUG] - tag: YPosition (287) - type: rational (5) Tag Location: 181820 - Data Location: 181884 - value: b'\x00\x00\x00\x00\x01\x00\x00\x00'
+[2025-10-03 13:38:27,520][PIL.TiffImagePlugin][DEBUG] - tag: ResolutionUnit (296) - type: short (3) - value: b'\x03\x00'
+[2025-10-03 13:38:27,520][PIL.TiffImagePlugin][DEBUG] - tag: PageNumber (297) - type: short (3) - value: b'\x00\x00\x01\x00'
+[2025-10-03 13:38:27,520][PIL.TiffImagePlugin][DEBUG] - tag: SampleFormat (339) - type: short (3) - value: b'\x01\x00'
+[2025-10-03 13:38:27,520][PIL.TiffImagePlugin][DEBUG] - *** Summary ***
+[2025-10-03 13:38:27,520][PIL.TiffImagePlugin][DEBUG] - - compression: tiff_lzw
+[2025-10-03 13:38:27,520][PIL.TiffImagePlugin][DEBUG] - - photometric_interpretation: 1
+[2025-10-03 13:38:27,520][PIL.TiffImagePlugin][DEBUG] - - planar_configuration: 1
+[2025-10-03 13:38:27,520][PIL.TiffImagePlugin][DEBUG] - - fill_order: 1
+[2025-10-03 13:38:27,520][PIL.TiffImagePlugin][DEBUG] - - YCbCr subsampling: None
+[2025-10-03 13:38:27,521][PIL.TiffImagePlugin][DEBUG] - - size: (696, 520)
+[2025-10-03 13:38:27,521][PIL.TiffImagePlugin][DEBUG] - format key: (b'II', 1, (1,), 1, (8,), ())
+[2025-10-03 13:38:27,521][PIL.TiffImagePlugin][DEBUG] - - raw mode: L
+[2025-10-03 13:38:27,521][PIL.TiffImagePlugin][DEBUG] - - pil mode: L
+[2025-10-03 13:38:27,521][PIL.TiffImagePlugin][DEBUG] - have fileno, calling fileno version of the decoder.
+[2025-10-03 13:38:27,523][PIL.TiffImagePlugin][DEBUG] - tag: NewSubfileType (254) - type: long (4) - value: b'\x00\x00\x00\x00'
+[2025-10-03 13:38:27,523][PIL.TiffImagePlugin][DEBUG] - tag: ImageWidth (256) - type: short (3) - value: b'\xb8\x02'
+[2025-10-03 13:38:27,523][PIL.TiffImagePlugin][DEBUG] - tag: ImageLength (257) - type: short (3) - value: b'\x08\x02'
+[2025-10-03 13:38:27,523][PIL.TiffImagePlugin][DEBUG] - tag: BitsPerSample (258) - type: short (3) - value: b'\x08\x00'
+[2025-10-03 13:38:27,523][PIL.TiffImagePlugin][DEBUG] - tag: Compression (259) - type: short (3) - value: b'\x05\x00'
+[2025-10-03 13:38:27,523][PIL.TiffImagePlugin][DEBUG] - tag: PhotometricInterpretation (262) - type: short (3) - value: b'\x01\x00'
+[2025-10-03 13:38:27,523][PIL.TiffImagePlugin][DEBUG] - tag: FillOrder (266) - type: short (3) - value: b'\x01\x00'
+[2025-10-03 13:38:27,523][PIL.TiffImagePlugin][DEBUG] - tag: StripOffsets (273) - type: long (4) Tag Location: 181712 - Data Location: 182084 - value: <table: 192 bytes>
+[2025-10-03 13:38:27,523][PIL.TiffImagePlugin][DEBUG] - tag: Orientation (274) - type: short (3) - value: b'\x01\x00'
+[2025-10-03 13:38:27,523][PIL.TiffImagePlugin][DEBUG] - tag: SamplesPerPixel (277) - type: short (3) - value: b'\x01\x00'
+[2025-10-03 13:38:27,523][PIL.TiffImagePlugin][DEBUG] - tag: RowsPerStrip (278) - type: short (3) - value: b'\x0b\x00'
+[2025-10-03 13:38:27,523][PIL.TiffImagePlugin][DEBUG] - tag: StripByteCounts (279) - type: long (4) Tag Location: 181760 - Data Location: 181892 - value: <table: 192 bytes>
+[2025-10-03 13:38:27,523][PIL.TiffImagePlugin][DEBUG] - tag: XResolution (282) - type: rational (5) Tag Location: 181772 - Data Location: 181860 - value: b'\xff\xff\xff\xff\x85B\x04\x00'
+[2025-10-03 13:38:27,523][PIL.TiffImagePlugin][DEBUG] - tag: YResolution (283) - type: rational (5) Tag Location: 181784 - Data Location: 181868 - value: b'\xff\xff\xff\xff\x85B\x04\x00'
+[2025-10-03 13:38:27,524][PIL.TiffImagePlugin][DEBUG] - tag: PlanarConfiguration (284) - type: short (3) - value: b'\x01\x00'
+[2025-10-03 13:38:27,524][PIL.TiffImagePlugin][DEBUG] - tag: XPosition (286) - type: rational (5) Tag Location: 181808 - Data Location: 181876 - value: b'\x00\x00\x00\x00\x01\x00\x00\x00'
+[2025-10-03 13:38:27,524][PIL.TiffImagePlugin][DEBUG] - tag: YPosition (287) - type: rational (5) Tag Location: 181820 - Data Location: 181884 - value: b'\x00\x00\x00\x00\x01\x00\x00\x00'
+[2025-10-03 13:38:27,524][PIL.TiffImagePlugin][DEBUG] - tag: ResolutionUnit (296) - type: short (3) - value: b'\x03\x00'
+[2025-10-03 13:38:27,524][PIL.TiffImagePlugin][DEBUG] - tag: PageNumber (297) - type: short (3) - value: b'\x00\x00\x01\x00'
+[2025-10-03 13:38:27,524][PIL.TiffImagePlugin][DEBUG] - tag: SampleFormat (339) - type: short (3) - value: b'\x01\x00'
+[2025-10-03 13:38:27,525][PIL.TiffImagePlugin][DEBUG] - *** TiffImageFile._open ***
+[2025-10-03 13:38:27,525][PIL.TiffImagePlugin][DEBUG] - - __first: 14558
+[2025-10-03 13:38:27,525][PIL.TiffImagePlugin][DEBUG] - - ifh: b'II*\x00\xde8\x00\x00'
+[2025-10-03 13:38:27,525][PIL.TiffImagePlugin][DEBUG] - Seeking to frame 0, on frame -1, __next 14558, location: 8
+[2025-10-03 13:38:27,525][PIL.TiffImagePlugin][DEBUG] - Loading tags, location: 14558
+[2025-10-03 13:38:27,525][PIL.TiffImagePlugin][DEBUG] - tag: NewSubfileType (254) - type: long (4) - value: b'\x00\x00\x00\x00'
+[2025-10-03 13:38:27,525][PIL.TiffImagePlugin][DEBUG] - tag: ImageWidth (256) - type: short (3) - value: b'\xb8\x02'
+[2025-10-03 13:38:27,525][PIL.TiffImagePlugin][DEBUG] - tag: ImageLength (257) - type: short (3) - value: b'\x08\x02'
+[2025-10-03 13:38:27,525][PIL.TiffImagePlugin][DEBUG] - tag: BitsPerSample (258) - type: short (3) - value: b'\x10\x00'
+[2025-10-03 13:38:27,525][PIL.TiffImagePlugin][DEBUG] - tag: Compression (259) - type: short (3) - value: b'\x05\x00'
+[2025-10-03 13:38:27,525][PIL.TiffImagePlugin][DEBUG] - tag: PhotometricInterpretation (262) - type: short (3) - value: b'\x01\x00'
+[2025-10-03 13:38:27,525][PIL.TiffImagePlugin][DEBUG] - tag: FillOrder (266) - type: short (3) - value: b'\x01\x00'
+[2025-10-03 13:38:27,525][PIL.TiffImagePlugin][DEBUG] - tag: StripOffsets (273) - type: long (4) Tag Location: 14656 - Data Location: 15200 - value: <table: 416 bytes>
+[2025-10-03 13:38:27,525][PIL.TiffImagePlugin][DEBUG] - tag: Orientation (274) - type: short (3) - value: b'\x01\x00'
+[2025-10-03 13:38:27,525][PIL.TiffImagePlugin][DEBUG] - tag: SamplesPerPixel (277) - type: short (3) - value: b'\x01\x00'
+[2025-10-03 13:38:27,526][PIL.TiffImagePlugin][DEBUG] - tag: RowsPerStrip (278) - type: short (3) - value: b'\x05\x00'
+[2025-10-03 13:38:27,526][PIL.TiffImagePlugin][DEBUG] - tag: StripByteCounts (279) - type: long (4) Tag Location: 14704 - Data Location: 14784 - value: <table: 416 bytes>
+[2025-10-03 13:38:27,526][PIL.TiffImagePlugin][DEBUG] - tag: PlanarConfiguration (284) - type: short (3) - value: b'\x01\x00'
+[2025-10-03 13:38:27,526][PIL.TiffImagePlugin][DEBUG] - tag: XPosition (286) - type: rational (5) Tag Location: 14728 - Data Location: 14768 - value: b'\x00\x00\x00\x00\x01\x00\x00\x00'
+[2025-10-03 13:38:27,526][PIL.TiffImagePlugin][DEBUG] - tag: YPosition (287) - type: rational (5) Tag Location: 14740 - Data Location: 14776 - value: b'\x00\x00\x00\x00\x01\x00\x00\x00'
+[2025-10-03 13:38:27,526][PIL.TiffImagePlugin][DEBUG] - tag: PageNumber (297) - type: short (3) - value: b'\x00\x00\x01\x00'
+[2025-10-03 13:38:27,526][PIL.TiffImagePlugin][DEBUG] - tag: SampleFormat (339) - type: short (3) - value: b'\x01\x00'
+[2025-10-03 13:38:27,526][PIL.TiffImagePlugin][DEBUG] - tag: NewSubfileType (254) - type: long (4) - value: b'\x00\x00\x00\x00'
+[2025-10-03 13:38:27,526][PIL.TiffImagePlugin][DEBUG] - tag: ImageWidth (256) - type: short (3) - value: b'\xb8\x02'
+[2025-10-03 13:38:27,526][PIL.TiffImagePlugin][DEBUG] - tag: ImageLength (257) - type: short (3) - value: b'\x08\x02'
+[2025-10-03 13:38:27,526][PIL.TiffImagePlugin][DEBUG] - tag: BitsPerSample (258) - type: short (3) - value: b'\x10\x00'
+[2025-10-03 13:38:27,526][PIL.TiffImagePlugin][DEBUG] - tag: Compression (259) - type: short (3) - value: b'\x05\x00'
+[2025-10-03 13:38:27,526][PIL.TiffImagePlugin][DEBUG] - tag: PhotometricInterpretation (262) - type: short (3) - value: b'\x01\x00'
+[2025-10-03 13:38:27,526][PIL.TiffImagePlugin][DEBUG] - tag: FillOrder (266) - type: short (3) - value: b'\x01\x00'
+[2025-10-03 13:38:27,526][PIL.TiffImagePlugin][DEBUG] - tag: StripOffsets (273) - type: long (4) Tag Location: 14656 - Data Location: 15200 - value: <table: 416 bytes>
+[2025-10-03 13:38:27,526][PIL.TiffImagePlugin][DEBUG] - tag: Orientation (274) - type: short (3) - value: b'\x01\x00'
+[2025-10-03 13:38:27,526][PIL.TiffImagePlugin][DEBUG] - tag: SamplesPerPixel (277) - type: short (3) - value: b'\x01\x00'
+[2025-10-03 13:38:27,526][PIL.TiffImagePlugin][DEBUG] - tag: RowsPerStrip (278) - type: short (3) - value: b'\x05\x00'
+[2025-10-03 13:38:27,527][PIL.TiffImagePlugin][DEBUG] - tag: StripByteCounts (279) - type: long (4) Tag Location: 14704 - Data Location: 14784 - value: <table: 416 bytes>
+[2025-10-03 13:38:27,527][PIL.TiffImagePlugin][DEBUG] - tag: PlanarConfiguration (284) - type: short (3) - value: b'\x01\x00'
+[2025-10-03 13:38:27,527][PIL.TiffImagePlugin][DEBUG] - tag: XPosition (286) - type: rational (5) Tag Location: 14728 - Data Location: 14768 - value: b'\x00\x00\x00\x00\x01\x00\x00\x00'
+[2025-10-03 13:38:27,527][PIL.TiffImagePlugin][DEBUG] - tag: YPosition (287) - type: rational (5) Tag Location: 14740 - Data Location: 14776 - value: b'\x00\x00\x00\x00\x01\x00\x00\x00'
+[2025-10-03 13:38:27,527][PIL.TiffImagePlugin][DEBUG] - tag: PageNumber (297) - type: short (3) - value: b'\x00\x00\x01\x00'
+[2025-10-03 13:38:27,527][PIL.TiffImagePlugin][DEBUG] - tag: SampleFormat (339) - type: short (3) - value: b'\x01\x00'
+[2025-10-03 13:38:27,527][PIL.TiffImagePlugin][DEBUG] - *** Summary ***
+[2025-10-03 13:38:27,527][PIL.TiffImagePlugin][DEBUG] - - compression: tiff_lzw
+[2025-10-03 13:38:27,527][PIL.TiffImagePlugin][DEBUG] - - photometric_interpretation: 1
+[2025-10-03 13:38:27,527][PIL.TiffImagePlugin][DEBUG] - - planar_configuration: 1
+[2025-10-03 13:38:27,527][PIL.TiffImagePlugin][DEBUG] - - fill_order: 1
+[2025-10-03 13:38:27,527][PIL.TiffImagePlugin][DEBUG] - - YCbCr subsampling: None
+[2025-10-03 13:38:27,527][PIL.TiffImagePlugin][DEBUG] - - size: (696, 520)
+[2025-10-03 13:38:27,527][PIL.TiffImagePlugin][DEBUG] - format key: (b'II', 1, (1,), 1, (16,), ())
+[2025-10-03 13:38:27,527][PIL.TiffImagePlugin][DEBUG] - - raw mode: I;16
+[2025-10-03 13:38:27,527][PIL.TiffImagePlugin][DEBUG] - - pil mode: I;16
+[2025-10-03 13:38:27,527][PIL.TiffImagePlugin][DEBUG] - have fileno, calling fileno version of the decoder.
+[2025-10-03 13:38:27,529][PIL.TiffImagePlugin][DEBUG] - tag: NewSubfileType (254) - type: long (4) - value: b'\x00\x00\x00\x00'
+[2025-10-03 13:38:27,529][PIL.TiffImagePlugin][DEBUG] - tag: ImageWidth (256) - type: short (3) - value: b'\xb8\x02'
+[2025-10-03 13:38:27,529][PIL.TiffImagePlugin][DEBUG] - tag: ImageLength (257) - type: short (3) - value: b'\x08\x02'
+[2025-10-03 13:38:27,529][PIL.TiffImagePlugin][DEBUG] - tag: BitsPerSample (258) - type: short (3) - value: b'\x10\x00'
+[2025-10-03 13:38:27,529][PIL.TiffImagePlugin][DEBUG] - tag: Compression (259) - type: short (3) - value: b'\x05\x00'
+[2025-10-03 13:38:27,529][PIL.TiffImagePlugin][DEBUG] - tag: PhotometricInterpretation (262) - type: short (3) - value: b'\x01\x00'
+[2025-10-03 13:38:27,529][PIL.TiffImagePlugin][DEBUG] - tag: FillOrder (266) - type: short (3) - value: b'\x01\x00'
+[2025-10-03 13:38:27,529][PIL.TiffImagePlugin][DEBUG] - tag: StripOffsets (273) - type: long (4) Tag Location: 14656 - Data Location: 15200 - value: <table: 416 bytes>
+[2025-10-03 13:38:27,529][PIL.TiffImagePlugin][DEBUG] - tag: Orientation (274) - type: short (3) - value: b'\x01\x00'
+[2025-10-03 13:38:27,529][PIL.TiffImagePlugin][DEBUG] - tag: SamplesPerPixel (277) - type: short (3) - value: b'\x01\x00'
+[2025-10-03 13:38:27,529][PIL.TiffImagePlugin][DEBUG] - tag: RowsPerStrip (278) - type: short (3) - value: b'\x05\x00'
+[2025-10-03 13:38:27,530][PIL.TiffImagePlugin][DEBUG] - tag: StripByteCounts (279) - type: long (4) Tag Location: 14704 - Data Location: 14784 - value: <table: 416 bytes>
+[2025-10-03 13:38:27,530][PIL.TiffImagePlugin][DEBUG] - tag: PlanarConfiguration (284) - type: short (3) - value: b'\x01\x00'
+[2025-10-03 13:38:27,530][PIL.TiffImagePlugin][DEBUG] - tag: XPosition (286) - type: rational (5) Tag Location: 14728 - Data Location: 14768 - value: b'\x00\x00\x00\x00\x01\x00\x00\x00'
+[2025-10-03 13:38:27,530][PIL.TiffImagePlugin][DEBUG] - tag: YPosition (287) - type: rational (5) Tag Location: 14740 - Data Location: 14776 - value: b'\x00\x00\x00\x00\x01\x00\x00\x00'
+[2025-10-03 13:38:27,530][PIL.TiffImagePlugin][DEBUG] - tag: PageNumber (297) - type: short (3) - value: b'\x00\x00\x01\x00'
+[2025-10-03 13:38:27,530][PIL.TiffImagePlugin][DEBUG] - tag: SampleFormat (339) - type: short (3) - value: b'\x01\x00'
+[2025-10-03 13:38:27,531][PIL.TiffImagePlugin][DEBUG] - *** TiffImageFile._open ***
+[2025-10-03 13:38:27,531][PIL.TiffImagePlugin][DEBUG] - - __first: 14558
+[2025-10-03 13:38:27,531][PIL.TiffImagePlugin][DEBUG] - - ifh: b'II*\x00\xde8\x00\x00'
+[2025-10-03 13:38:27,531][PIL.TiffImagePlugin][DEBUG] - Seeking to frame 0, on frame -1, __next 14558, location: 8
+[2025-10-03 13:38:27,531][PIL.TiffImagePlugin][DEBUG] - Loading tags, location: 14558
+[2025-10-03 13:38:27,531][PIL.TiffImagePlugin][DEBUG] - tag: NewSubfileType (254) - type: long (4) - value: b'\x00\x00\x00\x00'
+[2025-10-03 13:38:27,531][PIL.TiffImagePlugin][DEBUG] - tag: ImageWidth (256) - type: short (3) - value: b'\xb8\x02'
+[2025-10-03 13:38:27,531][PIL.TiffImagePlugin][DEBUG] - tag: ImageLength (257) - type: short (3) - value: b'\x08\x02'
+[2025-10-03 13:38:27,531][PIL.TiffImagePlugin][DEBUG] - tag: BitsPerSample (258) - type: short (3) - value: b'\x10\x00'
+[2025-10-03 13:38:27,531][PIL.TiffImagePlugin][DEBUG] - tag: Compression (259) - type: short (3) - value: b'\x05\x00'
+[2025-10-03 13:38:27,531][PIL.TiffImagePlugin][DEBUG] - tag: PhotometricInterpretation (262) - type: short (3) - value: b'\x01\x00'
+[2025-10-03 13:38:27,531][PIL.TiffImagePlugin][DEBUG] - tag: FillOrder (266) - type: short (3) - value: b'\x01\x00'
+[2025-10-03 13:38:27,531][PIL.TiffImagePlugin][DEBUG] - tag: StripOffsets (273) - type: long (4) Tag Location: 14656 - Data Location: 15200 - value: <table: 416 bytes>
+[2025-10-03 13:38:27,531][PIL.TiffImagePlugin][DEBUG] - tag: Orientation (274) - type: short (3) - value: b'\x01\x00'
+[2025-10-03 13:38:27,531][PIL.TiffImagePlugin][DEBUG] - tag: SamplesPerPixel (277) - type: short (3) - value: b'\x01\x00'
+[2025-10-03 13:38:27,531][PIL.TiffImagePlugin][DEBUG] - tag: RowsPerStrip (278) - type: short (3) - value: b'\x05\x00'
+[2025-10-03 13:38:27,535][PIL.TiffImagePlugin][DEBUG] - tag: StripByteCounts (279) - type: long (4) Tag Location: 14704 - Data Location: 14784 - value: <table: 416 bytes>
+[2025-10-03 13:38:27,535][PIL.TiffImagePlugin][DEBUG] - tag: PlanarConfiguration (284) - type: short (3) - value: b'\x01\x00'
+[2025-10-03 13:38:27,536][PIL.TiffImagePlugin][DEBUG] - tag: XPosition (286) - type: rational (5) Tag Location: 14728 - Data Location: 14768 - value: b'\x00\x00\x00\x00\x01\x00\x00\x00'
+[2025-10-03 13:38:27,536][PIL.TiffImagePlugin][DEBUG] - tag: YPosition (287) - type: rational (5) Tag Location: 14740 - Data Location: 14776 - value: b'\x00\x00\x00\x00\x01\x00\x00\x00'
+[2025-10-03 13:38:27,536][PIL.TiffImagePlugin][DEBUG] - tag: PageNumber (297) - type: short (3) - value: b'\x00\x00\x01\x00'
+[2025-10-03 13:38:27,536][PIL.TiffImagePlugin][DEBUG] - tag: SampleFormat (339) - type: short (3) - value: b'\x01\x00'
+[2025-10-03 13:38:27,536][PIL.TiffImagePlugin][DEBUG] - tag: NewSubfileType (254) - type: long (4) - value: b'\x00\x00\x00\x00'
+[2025-10-03 13:38:27,536][PIL.TiffImagePlugin][DEBUG] - tag: ImageWidth (256) - type: short (3) - value: b'\xb8\x02'
+[2025-10-03 13:38:27,536][PIL.TiffImagePlugin][DEBUG] - tag: ImageLength (257) - type: short (3) - value: b'\x08\x02'
+[2025-10-03 13:38:27,536][PIL.TiffImagePlugin][DEBUG] - tag: BitsPerSample (258) - type: short (3) - value: b'\x10\x00'
+[2025-10-03 13:38:27,536][PIL.TiffImagePlugin][DEBUG] - tag: Compression (259) - type: short (3) - value: b'\x05\x00'
+[2025-10-03 13:38:27,536][PIL.TiffImagePlugin][DEBUG] - tag: PhotometricInterpretation (262) - type: short (3) - value: b'\x01\x00'
+[2025-10-03 13:38:27,536][PIL.TiffImagePlugin][DEBUG] - tag: FillOrder (266) - type: short (3) - value: b'\x01\x00'
+[2025-10-03 13:38:27,536][PIL.TiffImagePlugin][DEBUG] - tag: StripOffsets (273) - type: long (4) Tag Location: 14656 - Data Location: 15200 - value: <table: 416 bytes>
+[2025-10-03 13:38:27,537][PIL.TiffImagePlugin][DEBUG] - tag: Orientation (274) - type: short (3) - value: b'\x01\x00'
+[2025-10-03 13:38:27,537][PIL.TiffImagePlugin][DEBUG] - tag: SamplesPerPixel (277) - type: short (3) - value: b'\x01\x00'
+[2025-10-03 13:38:27,537][PIL.TiffImagePlugin][DEBUG] - tag: RowsPerStrip (278) - type: short (3) - value: b'\x05\x00'
+[2025-10-03 13:38:27,537][PIL.TiffImagePlugin][DEBUG] - tag: StripByteCounts (279) - type: long (4) Tag Location: 14704 - Data Location: 14784 - value: <table: 416 bytes>
+[2025-10-03 13:38:27,537][PIL.TiffImagePlugin][DEBUG] - tag: PlanarConfiguration (284) - type: short (3) - value: b'\x01\x00'
+[2025-10-03 13:38:27,537][PIL.TiffImagePlugin][DEBUG] - tag: XPosition (286) - type: rational (5) Tag Location: 14728 - Data Location: 14768 - value: b'\x00\x00\x00\x00\x01\x00\x00\x00'
+[2025-10-03 13:38:27,537][PIL.TiffImagePlugin][DEBUG] - tag: YPosition (287) - type: rational (5) Tag Location: 14740 - Data Location: 14776 - value: b'\x00\x00\x00\x00\x01\x00\x00\x00'
+[2025-10-03 13:38:27,537][PIL.TiffImagePlugin][DEBUG] - tag: PageNumber (297) - type: short (3) - value: b'\x00\x00\x01\x00'
+[2025-10-03 13:38:27,537][PIL.TiffImagePlugin][DEBUG] - tag: SampleFormat (339) - type: short (3) - value: b'\x01\x00'
+[2025-10-03 13:38:27,537][PIL.TiffImagePlugin][DEBUG] - *** Summary ***
+[2025-10-03 13:38:27,537][PIL.TiffImagePlugin][DEBUG] - - compression: tiff_lzw
+[2025-10-03 13:38:27,537][PIL.TiffImagePlugin][DEBUG] - - photometric_interpretation: 1
+[2025-10-03 13:38:27,537][PIL.TiffImagePlugin][DEBUG] - - planar_configuration: 1
+[2025-10-03 13:38:27,537][PIL.TiffImagePlugin][DEBUG] - - fill_order: 1
+[2025-10-03 13:38:27,537][PIL.TiffImagePlugin][DEBUG] - - YCbCr subsampling: None
+[2025-10-03 13:38:27,537][PIL.TiffImagePlugin][DEBUG] - - size: (696, 520)
+[2025-10-03 13:38:27,537][PIL.TiffImagePlugin][DEBUG] - format key: (b'II', 1, (1,), 1, (16,), ())
+[2025-10-03 13:38:27,538][PIL.TiffImagePlugin][DEBUG] - - raw mode: I;16
+[2025-10-03 13:38:27,538][PIL.TiffImagePlugin][DEBUG] - - pil mode: I;16
+[2025-10-03 13:38:27,538][PIL.TiffImagePlugin][DEBUG] - have fileno, calling fileno version of the decoder.
+[2025-10-03 13:38:27,539][PIL.TiffImagePlugin][DEBUG] - tag: NewSubfileType (254) - type: long (4) - value: b'\x00\x00\x00\x00'
+[2025-10-03 13:38:27,539][PIL.TiffImagePlugin][DEBUG] - tag: ImageWidth (256) - type: short (3) - value: b'\xb8\x02'
+[2025-10-03 13:38:27,539][PIL.TiffImagePlugin][DEBUG] - tag: ImageLength (257) - type: short (3) - value: b'\x08\x02'
+[2025-10-03 13:38:27,539][PIL.TiffImagePlugin][DEBUG] - tag: BitsPerSample (258) - type: short (3) - value: b'\x10\x00'
+[2025-10-03 13:38:27,539][PIL.TiffImagePlugin][DEBUG] - tag: Compression (259) - type: short (3) - value: b'\x05\x00'
+[2025-10-03 13:38:27,539][PIL.TiffImagePlugin][DEBUG] - tag: PhotometricInterpretation (262) - type: short (3) - value: b'\x01\x00'
+[2025-10-03 13:38:27,539][PIL.TiffImagePlugin][DEBUG] - tag: FillOrder (266) - type: short (3) - value: b'\x01\x00'
+[2025-10-03 13:38:27,539][PIL.TiffImagePlugin][DEBUG] - tag: StripOffsets (273) - type: long (4) Tag Location: 14656 - Data Location: 15200 - value: <table: 416 bytes>
+[2025-10-03 13:38:27,540][PIL.TiffImagePlugin][DEBUG] - tag: Orientation (274) - type: short (3) - value: b'\x01\x00'
+[2025-10-03 13:38:27,540][PIL.TiffImagePlugin][DEBUG] - tag: SamplesPerPixel (277) - type: short (3) - value: b'\x01\x00'
+[2025-10-03 13:38:27,540][PIL.TiffImagePlugin][DEBUG] - tag: RowsPerStrip (278) - type: short (3) - value: b'\x05\x00'
+[2025-10-03 13:38:27,540][PIL.TiffImagePlugin][DEBUG] - tag: StripByteCounts (279) - type: long (4) Tag Location: 14704 - Data Location: 14784 - value: <table: 416 bytes>
+[2025-10-03 13:38:27,540][PIL.TiffImagePlugin][DEBUG] - tag: PlanarConfiguration (284) - type: short (3) - value: b'\x01\x00'
+[2025-10-03 13:38:27,540][PIL.TiffImagePlugin][DEBUG] - tag: XPosition (286) - type: rational (5) Tag Location: 14728 - Data Location: 14768 - value: b'\x00\x00\x00\x00\x01\x00\x00\x00'
+[2025-10-03 13:38:27,540][PIL.TiffImagePlugin][DEBUG] - tag: YPosition (287) - type: rational (5) Tag Location: 14740 - Data Location: 14776 - value: b'\x00\x00\x00\x00\x01\x00\x00\x00'
+[2025-10-03 13:38:27,540][PIL.TiffImagePlugin][DEBUG] - tag: PageNumber (297) - type: short (3) - value: b'\x00\x00\x01\x00'
+[2025-10-03 13:38:27,540][PIL.TiffImagePlugin][DEBUG] - tag: SampleFormat (339) - type: short (3) - value: b'\x01\x00'
