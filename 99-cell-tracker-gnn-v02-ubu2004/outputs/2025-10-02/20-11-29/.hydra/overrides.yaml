@@ -1,0 +1,7 @@
+- params.input_images=data/gnntest/CTC/PhC-C2DH-U373
+- params.input_masks=data/gnntest/CTC/PhC-C2DH-U373
+- params.input_seg=data/gnntest/CTC/PhC-C2DH-U373
+- params.output_csv=data/gnntest/CTC/basic_features
+- params.sequences=['01','02']
+- params.seg_dir=_GT/TRA
+- params.basic=True
