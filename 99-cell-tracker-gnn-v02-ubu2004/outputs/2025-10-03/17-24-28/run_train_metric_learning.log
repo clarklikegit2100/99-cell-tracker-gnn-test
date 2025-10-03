@@ -1,0 +1,7 @@
+[2025-10-03 17:26:15,467][matplotlib][DEBUG] - CACHEDIR=C:\Users\jzhao16\.matplotlib
+[2025-10-03 17:26:15,483][matplotlib.font_manager][DEBUG] - Using fontManager instance from C:\Users\jzhao16\.matplotlib\fontlist-v330.json
+[2025-10-03 17:30:17,678][PML][WARNING] - No module named 'tensorboard'
+[2025-10-03 17:30:17,678][PML][WARNING] - There won't be any logging or model saving.
+[2025-10-03 17:30:17,678][PML][WARNING] - To fix this, pip install record-keeper tensorboard
+[2025-10-03 17:30:19,595][PML][WARNING] - No record_keeper, so no preset hooks are being returned.
+[2025-10-03 17:33:42,406][matplotlib.pyplot][DEBUG] - Loaded backend module://backend_interagg version unknown.

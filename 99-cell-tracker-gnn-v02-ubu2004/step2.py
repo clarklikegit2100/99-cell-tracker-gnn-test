@@ -20,7 +20,6 @@ cmd = [
     f"dataset.kwargs.dir_csv={posix(dir_csv)}",
     "dataset.kwargs.subdir_mask=GT/TRA",
     "hydra.verbose=true",
-    # no 'params.basic=true' here
 ]
 
 print("[Step 2 : Run Metric Learning]", " ".join(shlex.quote(x) for x in cmd))

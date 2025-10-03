@@ -1,0 +1,8 @@
+[2025-10-03 17:20:40,440][matplotlib][DEBUG] - CACHEDIR=C:\Users\jzhao16\.matplotlib
+[2025-10-03 17:20:40,444][matplotlib.font_manager][DEBUG] - Using fontManager instance from C:\Users\jzhao16\.matplotlib\fontlist-v330.json
+[2025-10-03 17:20:40,852][PML][WARNING] - No module named 'tensorboard'
+[2025-10-03 17:20:40,852][PML][WARNING] - There won't be any logging or model saving.
+[2025-10-03 17:20:40,852][PML][WARNING] - To fix this, pip install record-keeper tensorboard
+[2025-10-03 17:20:40,852][PML][WARNING] - No record_keeper, so no preset hooks are being returned.
+[2025-10-03 17:20:43,559][PML][INFO] - Initializing dataloader
+[2025-10-03 17:20:43,560][PML][INFO] - Initializing dataloader iterator
