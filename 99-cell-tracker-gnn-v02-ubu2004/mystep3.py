@@ -15,7 +15,7 @@ def posix(p):  # <- key trick
     return p.replace("\\", "/")
 
 
-METRIC_PATH= "data/gnntest/software/parameters/Features_Models/PhC-C2DH-U373/all_params.pth"  # TODO: update this path
+METRIC_PATH= "C:/Users/jzhao16/Documents/mydata/gnntest/software/parameters/Features_Models/PhC-C2DH-U373/all_params.pth"  # TODO: update this path
 abs_metric_path = os.path.abspath(METRIC_PATH)
 seg_dir= '_GT/TRA'
 
@@ -28,11 +28,11 @@ cmd = [
     "params.sequences=['01','02']",
     f"params.seg_dir={posix(seg_dir)}",
     "params.basic=False",
-    f"params.input_model={abs_metric_path}",
+    f"params.input_model={posix(abs_metric_path)}",
     "hydra.verbose=true",
 ]
 
-print("[Step 1 : Run Extract Features]", " ".join(shlex.quote(x) for x in cmd))
+print("[Step 3 : Run Extract Features]", " ".join(shlex.quote(x) for x in cmd))
 subprocess.run(cmd, check=True, text=True)
 
 

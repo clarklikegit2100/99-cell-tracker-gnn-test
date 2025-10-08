@@ -1,0 +1,4 @@
+[2025-10-08 15:55:11,767][git.cmd][DEBUG] - Popen(['git', 'version'], cwd=C:\Users\jzhao16\Documents\GitHub\99-cell-tracker-gnn-test\99-cell-tracker-gnn-v02-ubu2004\logs\runs\2025-10-08\15-55-00, stdin=None, shell=False, universal_newlines=False)
+[2025-10-08 15:55:11,822][git.cmd][DEBUG] - Popen(['git', 'version'], cwd=C:\Users\jzhao16\Documents\GitHub\99-cell-tracker-gnn-test\99-cell-tracker-gnn-v02-ubu2004\logs\runs\2025-10-08\15-55-00, stdin=None, shell=False, universal_newlines=False)
+[2025-10-08 15:55:13,172][src.utils.utils][INFO] - Disabling python warnings! <config.disable_warnings=True>
+[2025-10-08 15:55:17,280][src.train][INFO] - Instantiating datamodule <src.datamodules.celltrack_datamodule_mulSeq.CellTrackDataModule>

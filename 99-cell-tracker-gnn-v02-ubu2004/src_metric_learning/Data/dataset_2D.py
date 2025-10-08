@@ -63,6 +63,7 @@ class ImgDataset(Dataset):
         # path to csv
         max_cell_id = 0
         for seq in range(self.num_sequences):
+            print(f"Processing sequence {seq+1}/{self.num_sequences}")
             if sequences_names is None:
                 curr_seq_int = curr_seq if self.num_sequences == 1 else seq + start_index
                 curr_seq_str = "%02d" % curr_seq_int
@@ -83,29 +84,46 @@ class ImgDataset(Dataset):
                 curr_df_cells.id = curr_df_cells.id + max_cell_id
 
             max_cell_id = np.max(curr_df_cells.id)
+            print(f"max cell id for sequence {curr_seq_str}: {max_cell_id}")
             self.max_cell_id.append(max_cell_id)
             # path to images and masks
             dir_img = os.path.join(self.data_dir_img, curr_seq_str)
             dir_masks = os.path.join(self.data_dir_mask, f"{curr_seq_str}_{subdir_mask}")
+            print(f"dir_img: {dir_img}")
+            print(f"dir_masks: {dir_masks}")
+            print(f"dir_csv_curr: {dir_csv_curr}")
             # read images and masks
             curr_images = [os.path.join(dir_img, fname) for fname in sorted(os.listdir(dir_img)) if type_img in fname]
             curr_masks = [os.path.join(dir_masks, fname) for fname in sorted(os.listdir(dir_masks)) if type_img in fname]
+            #print(f"curr_images: {curr_images}")
+            #print(f"curr_masks: {curr_masks}")
             assert len(curr_images) == len(curr_masks)
 
 
             if self.deviation == 'with_overlap':
+                print('Frame Mode: with overlap')
                 train_val_test_split = np.array(split)
                 train_val_test_split = len(curr_images) * train_val_test_split / train_val_test_split.sum()
                 train_val_test_split = train_val_test_split.astype('int32')
                 train_val_test_split = np.cumsum(train_val_test_split).tolist()
+                print(f'train_val_test_split: {train_val_test_split}')
             else:
+                print('Cell ID Mode: no overlap')
                 un_lables, un_counts = np.unique(curr_df_cells.id, return_counts=True)
                 un_counts = 100 * np.cumsum(un_counts) / un_counts.sum()
+                print(f"num cells: {len(un_lables)}")
+                print(f"num cells: {len(un_counts)}")
                 np_split = np.array(split).cumsum()
                 train_val_test_split = []
                 for ind, d_type in enumerate(['train', 'valid', 'test']):
                     curr_precent = np_split[ind]
+                    print(f"Cell ID Mode: {d_type}")
+                    print(f"current cell percentage : {int(curr_precent)}")
+                    print(f'current data:{np.argmin(np.abs(un_counts - curr_precent))+1}')
                     train_val_test_split.append(np.argmin(np.abs(un_counts - curr_precent))+1)
+                    print(f"train val test split: {train_val_test_split[ind]}")
+
+
 
             self.train_val_test_split = train_val_test_split
             curr_splits = [0] + train_val_test_split
@@ -121,17 +139,42 @@ class ImgDataset(Dataset):
                 self.curr_masks = curr_masks[self.frames]
             else:
                 range_strt, range_stp = curr_splits[indices[0]], curr_splits[indices[1]]
+                print(f"range_strt: {range_strt}, range_stp: {range_stp}")
                 self.range_list = un_lables[range_strt:range_stp]
+                print(f"num cells for {type_data}: {len(self.range_list)}")
                 mask_df = curr_df_cells.id.isin(self.range_list)
+                print(f"mask_df: {mask_df}")
                 curr_df_cells = curr_df_cells.loc[mask_df, :]
+                #print(f"curr_df_cells: {curr_df_cells}")
+                print("curr_df_cells shape:", curr_df_cells.shape, "columns:", list(curr_df_cells.columns))
+                #print(curr_df_cells.head(10).to_string())
+
                 self.frames = np.unique(curr_df_cells.frame_num).tolist()
+                print(f"current frames for {type_data}: {self.frames}")
                 self.curr_images = np.array(curr_images)[self.frames].tolist()
+                #print(f"num images for {type_data}: {len(self.curr_images)}")
+                #print(f"curr images for {type_data}: {self.curr_images}")
                 self.curr_masks = np.array(curr_masks)[self.frames].tolist()
+                #print(f"curr masks for {type_data}: {self.curr_masks}")
+
 
             self.frames_all.append(np.array(self.frames))
             self.df_cells.append(curr_df_cells)
             self.images.append(self.curr_images)
             self.masks.append(self.curr_masks)
+
+
+
+        #print(f"Total number of cells for {type_data}: {sum([len(t) for t in self.range_list])}")
+        total_cells = sum(self._span_len(t) for t in self.range_list)
+        print(f"Total number of cells for {type_data}: {total_cells}")
+        print(f"Total number of frames for {type_data}: {sum([len(t) for t in self.frames_all])}")
+        #print(f"Total number of sequences for {type_data}: {self.df_cells}")
+
+        total_images = sum(self._span_len(t) for t in self.images)
+        print(f"Total number of images for {type_data}: {total_images}")
+        total_masks = sum(self._span_len(t) for t in self.masks)
+        print(f"Total number of masks for {type_data}: {total_masks}")
 
         self.transform = transform
         self.is_3d = is_3d
@@ -165,6 +208,17 @@ class ImgDataset(Dataset):
 
         # self.range_list = self.range_list - self.range_list[0]
 
+    def _span_len(self, item):
+        import numpy as np
+        if isinstance(item, tuple) and len(item) == 2:
+            a, b = item
+            return int(b) - int(a)
+        if np.isscalar(item) or isinstance(item, (np.integer, int)):
+            return int(item)
+        try:
+            return len(item)
+        except Exception:
+            return len(list(item))
 
     def find_min_max(self):
         self.min_list = []

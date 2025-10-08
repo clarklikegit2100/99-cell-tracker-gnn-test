@@ -13,6 +13,9 @@ from hydra.utils import get_original_cwd, to_absolute_path
 
 from src_metric_learning.modules.resnet_2d.resnet import set_model_architecture, MLP
 
+from torch.serialization import add_safe_globals
+from torch_geometric.data.data import Data, DataEdgeAttr
+
 
 class TestDataset(Dataset):
 
@@ -205,8 +208,25 @@ class TestDataset(Dataset):
             df.to_csv(to_absolute_path(file_path), index=False)
         print(f"files were saved to : {full_dir}")
 
+
+    def torch_load_compat(path, map_location="cpu"):
+        try:
+            # PT ≥1.13: supports weights_only kw
+            return torch.load(path, map_location=map_location, weights_only=False)
+        except TypeError:
+            # Older PT: no weights_only kw
+            return torch.load(path, map_location=map_location)
+
     def preprocess_features_metric_learning(self, path_to_write, dict_path):
         dict_params = torch.load(dict_path)
+
+        #device = torch.device("cuda:0") if torch.cuda.is_available() else torch.device("cpu")
+        #print(f"Loading model to {device}")
+        #dict_params = torch.load(dict_path, map_location=device, weights_only=False)  # NOT "gpu"
+
+        #dict_params = torch.load(dict_path, map_location="gpu", weights_only=True)
+
+
 
         self.min_cell = dict_params['min_cell'][int(self.sec_path) - 1]
         self.max_cell = dict_params['max_cell'][int(self.sec_path) - 1]

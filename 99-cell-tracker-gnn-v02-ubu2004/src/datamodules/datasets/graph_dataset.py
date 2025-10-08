@@ -13,6 +13,8 @@ from torch_geometric.data import Data, InMemoryDataset
 from hydra.utils import get_original_cwd
 import warnings
 
+from torch.serialization import add_safe_globals
+from torch_geometric.data.data import Data, DataEdgeAttr
 
 class CellTrackDataset(InMemoryDataset):
     def __init__(self,
@@ -117,7 +119,10 @@ class CellTrackDataset(InMemoryDataset):
             read_path = osp.join(mul_path, file_name)
         else:
             read_path = osp.join(mul_path[0], file_name)
-        self.data, self.slices = torch.load(read_path)
+        #self.data, self.slices = torch.load(read_path)
+
+        add_safe_globals([Data, DataEdgeAttr])  # only if keeping weights_only=True
+        self.data, self.slices = torch.load(read_path, map_location="cpu", weights_only=False)
 
     @property
     def raw_file_names(self):
