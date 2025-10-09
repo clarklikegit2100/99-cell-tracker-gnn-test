@@ -10,3 +10,8 @@ data/Fluo-N2DH-SIM+/ST-feature-computation-plot-Fluo-N2DH-SIM+01.fig
 99-cell-tracker-gnn-v02-ubu2004/data/gnntest/CTC/Fluo-N2DL-HeLa.zip
 99-cell-tracker-gnn-v02-ubu2004/data/gnntest/CTC/ct_features/Fluo-N2DH-SIM+/01/processed/2D_SIM/MinMax_normalizedData_DirectedGraph_30Frames.pt
 99-cell-tracker-gnn-v02-ubu2004/data/gnntest/CTC/ct_features/Fluo-N2DL-HeLa/01/processed/2D_SIM/MinMax_normalizedData_DirectedGraph_10Frames.pt
+99-cell-tracker-gnn-v02-ubu2004/data/gnntest/software/parameters/Features_Models/Fluo-C2DL-Huh7/all_params.pth
+99-cell-tracker-gnn-v02-ubu2004/data/gnntest/software/parameters/Features_Models/Fluo-N2DH-SIM+/all_params.pth
+99-cell-tracker-gnn-v02-ubu2004/data/gnntest/software/parameters/Features_Models/Fluo-N2DL-HeLa/all_params.pth
+99-cell-tracker-gnn-v02-ubu2004/data/gnntest/software/parameters/Features_Models/Fluo-N3DH-SIM+/all_params.pth
+99-cell-tracker-gnn-v02-ubu2004/data/gnntest/software/parameters/Features_Models/PhC-C2DH-U373/all_params.pth

@@ -119,10 +119,10 @@ class CellTrackDataset(InMemoryDataset):
             read_path = osp.join(mul_path, file_name)
         else:
             read_path = osp.join(mul_path[0], file_name)
-        #self.data, self.slices = torch.load(read_path)
+        self.data, self.slices = torch.load(read_path)
 
-        add_safe_globals([Data, DataEdgeAttr])  # only if keeping weights_only=True
-        self.data, self.slices = torch.load(read_path, map_location="cpu", weights_only=False)
+        # add_safe_globals([Data, DataEdgeAttr])  # only if keeping weights_only=True
+        # self.data, self.slices = torch.load(read_path, map_location="cpu", weights_only=False)
 
     @property
     def raw_file_names(self):
