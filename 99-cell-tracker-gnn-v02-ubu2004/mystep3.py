@@ -15,7 +15,7 @@ def posix(p):  # <- key trick
     return p.replace("\\", "/")
 
 
-METRIC_PATH= "C:/Users/jzhao16/Documents/mydata/gnntest/software/parameters/Features_Models/PhC-C2DH-U373/all_params.pth"  # TODO: update this path
+METRIC_PATH= "data/gnntest/software/parameters/Features_Models/PhC-C2DH-U373/all_params.pth"  # TODO: update this path
 abs_metric_path = os.path.abspath(METRIC_PATH)
 seg_dir= '_GT/TRA'
 

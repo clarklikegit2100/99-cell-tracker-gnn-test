@@ -13,8 +13,8 @@ from hydra.utils import get_original_cwd, to_absolute_path
 
 from src_metric_learning.modules.resnet_2d.resnet import set_model_architecture, MLP
 
-from torch.serialization import add_safe_globals
-from torch_geometric.data.data import Data, DataEdgeAttr
+#from torch.serialization import add_scfafe_globals
+#from torch_geometric.data.data import Data, DataEdgeAttr
 
 
 class TestDataset(Dataset):

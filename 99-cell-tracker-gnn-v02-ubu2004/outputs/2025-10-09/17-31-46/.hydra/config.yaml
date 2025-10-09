@@ -1,0 +1,12 @@
+params:
+  input_images: null
+  input_masks: null
+  input_seg: null
+  input_model: null
+  output_csv: null
+  basic: null
+  sequences:
+  - '01'
+  - '02'
+  seg_dir: null
+_target_: src.datamodules.extract_features.preprocess_seq2graph_2d
