@@ -16,3 +16,8 @@ data/gnntest/software/
 99-cell-tracker-gnn-v02-ubu2004/data/software/parameters/Features_Models/Fluo-N2DL-HeLa/all_params.pth
 99-cell-tracker-gnn-v02-ubu2004/data/software/parameters/Features_Models/Fluo-N2DH-SIM+/all_params.pth
 99-cell-tracker-gnn-v02-ubu2004/data/software/parameters/Features_Models/Fluo-C2DL-Huh7/all_params.pth
+99-cell-tracker-gnn-v02-ubu2004/data/gnntest/software/parameters/Features_Models/PhC-C2DH-U373/all_params.pth
+99-cell-tracker-gnn-v02-ubu2004/data/gnntest/software/parameters/Features_Models/Fluo-N3DH-SIM+/all_params.pth
+99-cell-tracker-gnn-v02-ubu2004/data/gnntest/software/parameters/Features_Models/Fluo-N2DL-HeLa/all_params.pth
+99-cell-tracker-gnn-v02-ubu2004/data/gnntest/software/parameters/Features_Models/Fluo-N2DH-SIM+/all_params.pth
+99-cell-tracker-gnn-v02-ubu2004/data/gnntest/software/parameters/Features_Models/Fluo-C2DL-Huh7/all_params.pth
