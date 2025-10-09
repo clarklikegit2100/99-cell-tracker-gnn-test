@@ -22,7 +22,12 @@ def predict(ckpt_path, path_csv_output, num_seq):
         folder_path = folder_path[:folder_path.rfind('/')]
 
     config_path = os.path.join(folder_path, '.hydra/config.yaml')
-    config = yaml.load(open(config_path))
+    
+    #config = yaml.load(open(config_path))
+
+    with open(config_path, "r") as f:
+        config = yaml.load(f, Loader=yaml.SafeLoader)
+
 
     print(f"load model from: {CKPT_PATH}")
     data_yaml = config['datamodule']
