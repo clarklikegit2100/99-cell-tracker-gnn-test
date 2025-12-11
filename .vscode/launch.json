@@ -13,6 +13,19 @@
             "cwd": "${workspaceFolder}/99-cell-tracker-gnn-v02-ubu2004",
             "console": "integratedTerminal",
             "args": "${command:pickArgs}"
+        },
+        {
+        "name": "Python: Debug - Very Good",
+        "type": "python",
+        "request": "launch",
+        "program": "${workspaceFolder}/99-cell-tracker-gnn-v02-ubu2004/mystep4.py",
+        "cwd": "${workspaceFolder}/99-cell-tracker-gnn-v02-ubu2004",
+        "console": "integratedTerminal",
+        "env": {
+            "CUDA_LAUNCH_BLOCKING": "1",
+            "TORCH_SHOW_CPP_STACKTRACES": "1"
+        },
+        "justMyCode": false
         }
     ]
 }
